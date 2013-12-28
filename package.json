@@ -1,6 +1,6 @@
 {
   "name": "data-file-parser",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "node module for parsing file and writing into another file",
   "main": "index.js",
   "scripts": {
