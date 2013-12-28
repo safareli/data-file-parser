@@ -20,6 +20,8 @@ var parse  = function(params){
     },function(err){
       return console.log(err);
     }).then(function (arr) {
+        if (!params.out)
+            return arr; 
         var data = JSON.stringify(arr, null, 4);
         if (params.var)
             data = "var "+params.var+" = "+data+";"
@@ -27,6 +29,4 @@ var parse  = function(params){
         return arr; 
     });
 }
-exports = {
-    parse:parse
-};
+exports.parse = parse;
