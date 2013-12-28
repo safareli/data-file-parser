@@ -1,0 +1,32 @@
+{
+  "name": "data-file-parser",
+  "version": "0.0.1",
+  "description": "node module for parsing file and writing into another file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Safareli/data-file-parser.git"
+  },
+  "keywords": [
+    "regex",
+    "file",
+    "parser",
+    "parse",
+    "data"
+  ],
+  "author": "Irakli Safareli",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Safareli/data-file-parser/issues"
+  },
+  "homepage": "https://github.com/Safareli/data-file-parser",
+  "devDependencies": {
+    "q": "~0.9.7"
+  },
+  "dependencies": {
+    "q": "~0.9.7"
+  }
+}
