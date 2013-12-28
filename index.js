@@ -9,12 +9,12 @@ var parse  = function(params){
         var arr = [];
         var parsedItem = params.regex.exec(data);
         var obj = params.as.split('|');
-        while(parsedItem != null){
+        while(parsedItem !== null){
             for(var k = 0,i = 1,item = {}; k < obj.length ; k++,i++){
                 item[obj[k]] = parsedItem[i];
             }
             arr.push(item);
-            var parsedItem = params.regex.exec(data);
+            parsedItem = params.regex.exec(data);
         }
         return arr;
     },function(err){
@@ -24,9 +24,9 @@ var parse  = function(params){
             return arr; 
         var data = JSON.stringify(arr, null, 4);
         if (params.var)
-            data = "var "+params.var+" = "+data+";"
+            data = "var "+params.var+" = "+data+";";
         writeFile(params.out,data);
         return arr; 
     });
-}
+};
 exports.parse = parse;
